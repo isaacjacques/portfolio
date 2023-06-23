@@ -1,14 +1,20 @@
-import Header from "./Header";
-import Portfolio from "./Portfolio";
-import Footer from "./Footer";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 
+//<Route path="*" element={<NoPage />} />
 function App() {
   return (
-    <div className="flex flex-col justify-between bg-spacecadet min-h-screen max-w-screen-xl px-6 py-12 font-sans">
-      <Header />
-      <Portfolio />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
