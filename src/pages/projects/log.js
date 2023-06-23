@@ -1,4 +1,4 @@
-﻿
+
 class Log {
     constructor(element){
         this.element = element;
@@ -9,3 +9,9 @@ class Log {
         this.element.scrollTop = this.element.scrollHeight;
     }
 }
+
+const LogComponent = () => {
+  return null;
+};
+
+export { Log, LogComponent };

@@ -1,4 +1,4 @@
-﻿class GridPoint {
+class GridPoint {
     constructor(column, row) {
         this.column = column;
         this.row = row;
@@ -7,7 +7,7 @@
         this.h = 0;
         this.vh = 0;
         this.neighbors = [];
-        this.previous;
+        this.previous = undefined;
         this.isObstacle = false;
     }
 
@@ -38,3 +38,10 @@
         }
     }
 }
+
+const GridPointComponent = () => {
+  // This component is just a placeholder since the class doesn't require any React-specific functionality.
+  return null;
+};
+
+export { GridPoint, GridPointComponent };

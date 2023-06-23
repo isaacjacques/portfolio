@@ -1,11 +1,14 @@
-﻿class Grid {
+
+import { GridPoint } from "./GridPoint.js";
+
+class Grid {
     constructor(canvas, columns, rows, log) {
         this.canvas = canvas;
         this.columns = columns;
         this.rows = rows;
         this.context = this.canvas.getContext('2d');
         this.cells = new Array(this.columns);
-        this.canvas.addEventListener("click", this.selectionHandler.bind(this));
+        this.canvas.addEventListener("click", this.handleClick.bind(this));
         this.log = log;
     }
 
@@ -61,7 +64,7 @@
         }
     }
 
-    selectionHandler(event) {
+    handleClick(event) {
         var gridRect = event.target.getBoundingClientRect();
 
         var scaleX = event.target.width / gridRect.width;
@@ -86,3 +89,9 @@
         }
     }
 }
+
+const GridComponent = () => {
+  return null;
+};
+
+export { Grid, GridComponent };

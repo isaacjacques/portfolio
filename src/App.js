@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import Astar from "./pages/projects/Astar";
+import AstarDemo from "./pages/projects/AstarDemo";
 
 //<Route path="*" element={<NoPage />} />
 function App() {
@@ -14,7 +14,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="/projects" element={<Projects />}>
-            <Route path="astar" element={<Astar />}/>
+            <Route path="astardemo" element={<AstarDemo />}/>
           </Route>
         </Route>
       </Routes>

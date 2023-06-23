@@ -1,9 +1,9 @@
-
-const Projects = () => {
-    return (
-        <h1>
-            PROJECTS    
-        </h1>
-  )
-};
+import { Outlet, Link } from "react-router-dom";
+function Projects() {
+  return (
+    <div>
+        <Outlet />
+    </div>
+  );
+}
 export default Projects;
