@@ -1,4 +1,5 @@
 import aStarThumbnail from './../aStarProjectThumbnail.PNG';
+import ecomSiteThumbnail from './../ecomSiteThumbnail.jpg';
 import elementThumbnail from './../elementThumbnail.png';
 import Badge from './../Badge.js';
 import ProjectTile from './../ProjectTile.js';
@@ -53,11 +54,26 @@ const Home = () => {
                             }
                         />
                     </li>
+                    <li>
+                        <ProjectTile 
+                            title={"E-commerce Site API and Database"} 
+                            description={"In this project I designed and implemented the backend for an online shop in C# and SQL. The main objective for the API was to impliment basic CRUD operations with authentication while using Dapper for the ORM." } 
+                            href={"https://github.com/isaacjacques/EcomSite"} 
+                            src={ecomSiteThumbnail} 
+                            alt={"E-commerce Site API and Database"}
+                            badges={ 
+                                <div className="flex flex-row">
+                                    <Badge text={"SQL"}/>
+                                    <Badge text={"C#"}/>
+                                </div> 
+                            }
+                        />
+                    </li>
                 </ul>
             </section>
             <section id="experience" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
                 <div className="z-10 sm:col-span-6">
-                    <h2 className="text-4xl font-bold leading-snug text-isabelline-100">Experience</h2>
+                    <h2 className="pb-4 text-4xl font-bold leading-snug text-isabelline-100">Experience</h2>
                     <ul>
                         <li>
                             <ProjectTile 
