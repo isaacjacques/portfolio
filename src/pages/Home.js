@@ -1,6 +1,7 @@
 import aStarThumbnail from './../aStarProjectThumbnail.PNG';
 import ecomSiteThumbnail from './../ecomSiteThumbnail.jpg';
 import elementThumbnail from './../elementThumbnail.png';
+import csharpGenericThumbnail from './../csharpGenericThumbnail.png';
 import Badge from './../Badge.js';
 import ProjectTile from './../ProjectTile.js';
 import TileThumbnail from './../TileThumbnail.js';
@@ -41,6 +42,21 @@ const Home = () => {
                 <ul>
                     <li>
                         <ProjectTile 
+                            title={"E-commerce Site API and Database"} 
+                            description={"In this project I designed and implemented the backend for an online shop in C# and SQL. The main objective for the API was to impliment basic CRUD operations with authentication while using Dapper for the ORM." } 
+                            href={"https://github.com/isaacjacques/EcomSite"} 
+                            src={ecomSiteThumbnail} 
+                            alt={"E-commerce Site API and Database"}
+                            badges={ 
+                                <div className="flex flex-row">
+                                    <Badge text={"SQL"}/>
+                                    <Badge text={"C#"}/>
+                                </div> 
+                            }
+                        />
+                    </li>
+                    <li>
+                        <ProjectTile 
                             title={"A* Search Algorithm"} 
                             description={"In this project I created a visualizer for the A* Search Algorithm in mostly javascript. A main objective was to allow user interaction by creating obstacles for the algorithm to avoid as it attempts to find an efficient path between two points." } 
                             href={"/projects/astardemo"} 
@@ -56,14 +72,13 @@ const Home = () => {
                     </li>
                     <li>
                         <ProjectTile 
-                            title={"E-commerce Site API and Database"} 
-                            description={"In this project I designed and implemented the backend for an online shop in C# and SQL. The main objective for the API was to impliment basic CRUD operations with authentication while using Dapper for the ORM." } 
-                            href={"https://github.com/isaacjacques/EcomSite"} 
-                            src={ecomSiteThumbnail} 
-                            alt={"E-commerce Site API and Database"}
+                            title={"TCP Server"} 
+                            description={"I created a mulithreaded TCP Server in .NET 6.0." } 
+                            href={"https://github.com/isaacjacques/TcpMessager"} 
+                            src={csharpGenericThumbnail} 
+                            alt={"C# TCP Server"}
                             badges={ 
                                 <div className="flex flex-row">
-                                    <Badge text={"SQL"}/>
                                     <Badge text={"C#"}/>
                                 </div> 
                             }

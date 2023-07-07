@@ -1,5 +1,6 @@
 import { AiOutlineGithub, AiOutlineLinkedin, AiOutlineCopyright } from 'react-icons/ai'
 import { MdOutlineMail } from 'react-icons/md'
+import { SiLeetcode } from 'react-icons/si'
 import ContactIcon from './ContactIcon.js'
 /*
     <div className="inline-flex items-center">
@@ -14,6 +15,11 @@ const Footer = () => {
           <li className="inline-block mt-1 mr-3">
             <a className="block hover:text-rosequartz-400" href="https://github.com/isaacjacques" target="_blank" rel="noreferrer">
               <ContactIcon icon={<AiOutlineGithub size="33"/>} />
+            </a>
+          </li>
+          <li className="inline-block mt-1 mr-3">
+            <a className="block hover:text-rosequartz-400" href="https://leetcode.com/isaacjacques" target="_blank" rel="noreferrer">
+              <ContactIcon icon={<SiLeetcode size="33"/>} />
             </a>
           </li>
           <li className="inline-block mt-1 mr-3">
