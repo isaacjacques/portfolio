@@ -1,4 +1,5 @@
 import { GiAmplitude } from 'react-icons/gi'
+import HeaderSubtitle from './HeaderSubtitle.js';
 
 const Header = () => {
   return (
@@ -11,11 +12,7 @@ const Header = () => {
           </h1>
         </a>
         <h2 className="font-medium text-2xl text-paledogwood-300">Sofware Developer</h2>
-        <div className="text-lg text-isabelline-100"> 
-          <p className="mb-8">
-            "I build things."
-          </p>
-        </div>
+        <HeaderSubtitle />
       </div>
     </header>
   );

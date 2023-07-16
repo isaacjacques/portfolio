@@ -1,12 +1,19 @@
-import aStarThumbnail from './../aStarProjectThumbnail.PNG';
-import ecomSiteThumbnail from './../ecomSiteThumbnail.jpg';
-import elementThumbnail from './../elementThumbnail.png';
-import csharpGenericThumbnail from './../csharpGenericThumbnail.png';
+import aStarThumbnail from './../img/aStarProjectThumbnail.png';
+import asciiArtGeneratorThumbnail from './../img/asciiArtGeneratorThumbnail.jpg';
+import ecomSiteThumbnail from './../img/ecomSiteThumbnail.jpg';
+import elementThumbnail from './../img/elementThumbnail.png';
+import csharpGenericThumbnail from './../img/csharpGenericThumbnail.png';
 import Badge from './../Badge.js';
 import ProjectTile from './../ProjectTile.js';
 import TileThumbnail from './../TileThumbnail.js';
+import raw from './../AsciiArt.txt';
 
 const Home = () => {
+    fetch(raw)
+    .then(t => t.text()).then(asciiArt => {
+        console.log('%s\n\nIf you\'re curious about how this site works, the source code is available on my github:\nhttps://github.com/isaacjacques/portfolio', asciiArt)
+    })
+
     return (
         <div className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
             <section id="about">
@@ -43,29 +50,14 @@ const Home = () => {
                     <li>
                         <ProjectTile 
                             title={"E-commerce Site API and Database"} 
-                            description={"In this project I designed and implemented the backend for an online shop in C# and SQL. The main objective for the API was to impliment basic CRUD operations with authentication while using Dapper for the ORM." } 
+                            description={"An API and Database designed for an online shop with basic CRUD operations and authentication/authorization." } 
                             href={"https://github.com/isaacjacques/EcomSite"} 
                             src={ecomSiteThumbnail} 
                             alt={"E-commerce Site API and Database"}
                             badges={ 
                                 <div className="flex flex-row">
-                                    <Badge text={"SQL"}/>
+                                    <Badge text={"MS SQL"}/>
                                     <Badge text={"C#"}/>
-                                </div> 
-                            }
-                        />
-                    </li>
-                    <li>
-                        <ProjectTile 
-                            title={"A* Search Algorithm"} 
-                            description={"In this project I created a visualizer for the A* Search Algorithm in mostly javascript. A main objective was to allow user interaction by creating obstacles for the algorithm to avoid as it attempts to find an efficient path between two points." } 
-                            href={"/projects/astardemo"} 
-                            src={aStarThumbnail} 
-                            alt={"A* Search Algorithm"}
-                            badges={ 
-                                <div className="flex flex-row">
-                                    <Badge text={"Javascript"}/>
-                                    <Badge text={"HTML"}/>
                                 </div> 
                             }
                         />
@@ -73,13 +65,42 @@ const Home = () => {
                     <li>
                         <ProjectTile 
                             title={"TCP Server"} 
-                            description={"I created a mulithreaded TCP Server in .NET 6.0." } 
+                            description={"A mulithreaded TCP Server in .NET 6.0." } 
                             href={"https://github.com/isaacjacques/TcpMessager"} 
                             src={csharpGenericThumbnail} 
                             alt={"C# TCP Server"}
                             badges={ 
                                 <div className="flex flex-row">
                                     <Badge text={"C#"}/>
+                                </div> 
+                            }
+                        />
+                    </li>
+                    <li>
+                        <ProjectTile 
+                            title={"Ascii Art Generator"} 
+                            description={"A python tool that converts image files into ascii art." } 
+                            href={"https://github.com/isaacjacques/AsciiArtGenerator"} 
+                            src={asciiArtGeneratorThumbnail} 
+                            alt={"Ascii Art Generator"}
+                            badges={ 
+                                <div className="flex flex-row">
+                                    <Badge text={"Python"}/>
+                                </div> 
+                            }
+                        />
+                    </li>
+                    <li>
+                        <ProjectTile 
+                            title={"A* Search Algorithm"} 
+                            description={"A visualizer for the A* Search Algorithm that allows users to create obstacles to avoid." } 
+                            href={"/projects/astardemo"} 
+                            src={aStarThumbnail} 
+                            alt={"A* Search Algorithm"}
+                            badges={ 
+                                <div className="flex flex-row">
+                                    <Badge text={"JS"}/>
+                                    <Badge text={"HTML"}/>
                                 </div> 
                             }
                         />
@@ -104,7 +125,7 @@ const Home = () => {
                                 alt={"SDI Element Logic"}
                                 badges={ 
                                     <div className="flex flex-row">
-                                        <Badge text={"SQL"}/>
+                                        <Badge text={"MS SQL"}/>
                                         <Badge text={"C#"}/>
                                         <Badge text={"IEC 61131-3"}/>
                                     </div> 
