@@ -4,6 +4,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import AstarDemo from "./pages/projects/AstarDemo";
+import FlightMapDemo from "./pages/projects/FlightMapDemo";
 
 //<Route path="*" element={<NoPage />} />
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="home" element={<Home />} />
           <Route path="/projects" element={<Projects />}>
             <Route path="astardemo" element={<AstarDemo />}/>
+            <Route path="flightmapdemo" element={<FlightMapDemo />}/>
           </Route>
         </Route>
       </Routes>

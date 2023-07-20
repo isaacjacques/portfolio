@@ -3,6 +3,7 @@ import asciiArtGeneratorThumbnail from './../img/asciiArtGeneratorThumbnail.jpg'
 import ecomSiteThumbnail from './../img/ecomSiteThumbnail.jpg';
 import elementThumbnail from './../img/elementThumbnail.png';
 import csharpGenericThumbnail from './../img/csharpGenericThumbnail.png';
+import flightTrackerThumbnail from './../img/flightTrackerThumbnail.jpg';
 import Badge from './../Badge.js';
 import ProjectTile from './../ProjectTile.js';
 import TileThumbnail from './../TileThumbnail.js';
@@ -47,6 +48,22 @@ const Home = () => {
             <section id="projects">
                 <h2 className="pb-4 text-4xl font-bold leading-snug text-isabelline-100">Projects</h2>
                 <ul>
+                    <li>
+                        <ProjectTile 
+                            title={"Flight Tracker"} 
+                            description={"A react app using Leaflet to visualize publicly available flight data provided by OpenSky REST API" } 
+                            href={"/projects/flightmapdemo"} 
+                            src={flightTrackerThumbnail} 
+                            alt={"Flight Tracker"}
+                            badges={ 
+                                <div className="flex flex-row">
+                                    <Badge text={"React"}/>
+                                    <Badge text={"JS"}/>
+                                    <Badge text={"HTML"}/>
+                                </div> 
+                            }
+                        />
+                    </li>
                     <li>
                         <ProjectTile 
                             title={"E-commerce Site API and Database"} 
@@ -99,6 +116,7 @@ const Home = () => {
                             alt={"A* Search Algorithm"}
                             badges={ 
                                 <div className="flex flex-row">
+                                    <Badge text={"React"}/>
                                     <Badge text={"JS"}/>
                                     <Badge text={"HTML"}/>
                                 </div> 

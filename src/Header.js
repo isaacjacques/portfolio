@@ -5,9 +5,9 @@ const Header = () => {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-3/8 lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <a className="flex flex-row text-paledogwood-300 hover:text-rosequartz-400" href="/" target="_blank" rel="noreferrer">
+        <a className="flex flex-row text-paledogwood-300 hover:text-rosequartz-400" href="/" rel="noreferrer">
           <GiAmplitude size="46" className="pt-1 pr-1"/>
-          <h1 className="font-bold whitespace-nowrap text-5xl text-isabelline-100 hover:text-rosequartz-400">
+          <h1 className="font-bold whitespace-nowrap text-5xl  text-isabelline-100 hover:text-rosequartz-400">
             Isaac Jacques
           </h1>
         </a>

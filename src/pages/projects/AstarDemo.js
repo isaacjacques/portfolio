@@ -121,7 +121,7 @@ const AstarDemo = () => {
     };
 
     return (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 mx-auto">
             <h1 className="font-bold text-5xl text-isabelline-100">A* Search Algorithm</h1>
             <section id="demo">
                 <div className="flex flex-col gap-4">
@@ -154,7 +154,7 @@ const AstarDemo = () => {
             <section id="sourcecode">
                 <div className="text-lg text-paledogwood-300">
                     <h2 className="text-4xl font-bold leading-snug text-isabelline-100">SourceCode</h2>
-                    <a href="https://github.com/isaacjacques/aStarSearchAlgorithm" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/isaacjacques/aStarSearchAlgorithm" target="_blank" rel="noreferrer" className="underline">
                         Github Repo
                     </a>
                 </div>
@@ -163,12 +163,12 @@ const AstarDemo = () => {
                 <h2 className="text-4xl font-bold leading-snug text-isabelline-100">References</h2>
                 <ul className="text-lg text-paledogwood-300">
                     <li>
-                        <a href="https://www.geeksforgeeks.org/a-search-algorithm/" target="_blank" rel="noreferrer">
+                        <a href="https://www.geeksforgeeks.org/a-search-algorithm/" target="_blank" rel="noreferrer" className="underline">
                             GeeksForGeeks
                         </a>
                     </li>
                     <li>
-                        <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank" rel="noreferrer">
+                        <a href="https://en.wikipedia.org/wiki/A*_search_algorithm" target="_blank" rel="noreferrer" className="underline">
                             Wikipedia
                         </a>
                     </li>
