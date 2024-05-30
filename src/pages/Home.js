@@ -17,34 +17,27 @@ const Home = () => {
 
     return (
         <div className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
-            <section id="about">
-                <h2 className="text-4xl font-bold leading-snug text-isabelline-100">About</h2>
-                <div className="text-lg text-paledogwood-300">
-                    <p className="mb-8">
-                        As a skilled software developer hailing from Florida, I bring a multitude of valuable attributes to the table. 
-                        At the age of 23, my passion for engineering in all its forms has been a constant driving force in my life, and I am incredibly grateful to have discovered the world of software development. 
-                        While I am largely self-taught and consider myself an autodidact, I have also gained substantial professional experience in backend and app development, as well as real-time programming.       
-                    </p>
-                    <p className="mb-8">
-                        My journey into the world of software development began with my involvement in warehouse automation, where I honed my skills and gained practical experience in delivering robust solutions. 
-                        This professional background has equipped me with a strong foundation in understanding industry demands and executing projects efficiently.
-                    </p>
-                    <p className="mb-8">
-                        In addition to my core expertise, I possess a solid grasp of networking principles, bolstered by my professional experience in this domain. 
-                        This knowledge allows me to develop software solutions that seamlessly integrate with existing systems and leverage the power of efficient communication.
-                    </p>
-                    <p className="mb-8">
-                        Beyond my professional pursuits, I am an avid PC gamer, constantly immersing myself in the latest technologies and trends. 
-                        I enjoy DIY electronics projects, where I can explore the intersection of hardware and software development. 
-                        I also find CTF security challenges to be an enjoyable avenue for acquiring new skills in a dynamic and engaging manner.
-                    </p>
-                    <p>
-                        Overall, my combination of self-driven learning, professional experience, and diverse interests make me a well-rounded and enthusiastic software developer. 
-                        I am confident that my dedication, technical prowess, and ability to adapt to dynamic challenges will make me a valuable asset to any software development team.
-                        <a className="hover:text-rosequartz-400" href="mailto:jacques.development@outlook.com" target="_blank" rel="noreferrer"> Full resume and references available by request.</a>
-                    </p>
-                </div>
-            </section>
+        <section id="about">
+            <h2 className="text-4xl font-bold leading-snug text-isabelline-100">About</h2>
+            <div className="text-lg text-paledogwood-300">
+                <p className="mb-8">
+                As a skilled software developer hailing from 
+                Florida, I bring a multitude of valuable 
+                attributes to the table. At the age of 24, my 
+                passion for engineering in all its forms has 
+                been a constant driving force in my life, and 
+                I am incredibly grateful to have discovered 
+                the world of software development. While I 
+                am largely self-taught and consider myself 
+                an autodidact, I have also gained 
+                substantial professional experience in 
+                backend and app development, as well as 
+                real-time programming. 
+                Additionally, I'll be completing my associates degree in the winter of 2024.
+                    <a className="hover:text-rosequartz-400 italic" href="mailto:jacques.development@outlook.com" target="_blank" rel="noreferrer"> My full resume and references available by request.</a>
+                </p>
+            </div>
+        </section>
             <section id="projects">
                 <h2 className="pb-4 text-4xl font-bold leading-snug text-isabelline-100">Projects</h2>
                 <ul>
@@ -130,25 +123,62 @@ const Home = () => {
                     <h2 className="pb-4 text-4xl font-bold leading-snug text-isabelline-100">Experience</h2>
                     <ul>
                         <li>
-                            <ProjectTile 
-                                title={"SDI Element Logic (2019-2023)"} 
-                                description={"During my tenure at SDI, I played a vital role in developing and implementing advanced warehouse automation systems."
-                                    +" Beginning as an intern in QA, I honed my skills in debugging and patching code while concurrently providing assistance with IT/Networking tasks."
-                                    +" These tasks included, working clients to configure business-to-business VPNs on Cisco, SonicWall, and Netgear appliances."
-                                    +" As a full-time employee, I specialized in Microsoft SQL Server development, actively contributing to all levels of our tech stack within a close-knit team."
-                                    +" Along the way, I gained valuable experience in C# programming, debugging our applications responsible for seamless database integration."
-                                    +" Additionally, I acquired experience in web development for ASP.NET applications, as well as the programming of Beckhoff PLCs using structured text."} 
-                                href={"https://www.elementlogic.net/"} 
-                                src={elementThumbnail} 
-                                alt={"SDI Element Logic"}
-                                badges={ 
-                                    <div className="flex flex-row">
+                            <div className="pb-4 grid grid-cols-6 gap-4">
+                                <TileThumbnail src={elementThumbnail} alt={"SDI Element Logic"}/>
+                                <div className="col-span-4">
+                                    <a href={"https://www.elementlogic.net/"} target="_blank" rel="noreferrer">
+                                        <h2 className="pb-4 text-2xl font-bold leading-snug text-isabelline-100 hover:text-rosequartz-400">{ "SDI Element Logic (2019-2020) - QA Intern" }</h2>
+                                    </a>
+                                    <p className="pb-4 text-lg text-paledogwood-300">
+                                        <ul class="list-disc pl-8">
+                                            <li>In this role I was responsible for diagnosing and resolving issues in applications</li>
+                                            <li>Often I would need to fix issues MS SQL procedures or optimize queries</li>
+                                            <li>At this time I also patched .NET applications in C# and VisualBasic</li>
+                                        </ul>
+                                    </p>
+                                    <div className="flex flex-wrap">
+                                        <div className="flex flex-row">
+                                            <Badge text={"MS SQL"}/>
+                                            <Badge text={"C#"}/>
+                                            <Badge text={"VB"}/>
+                                            <Badge text={".NET Framework"}/>
+                                            <Badge text={".NET Core"}/>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="pb-4 grid grid-cols-6 gap-4">
+                                <TileThumbnail src={elementThumbnail} alt={"SDI Element Logic"}/>
+                                <div className="col-span-4">
+                                    <a href={"https://www.elementlogic.net/"} target="_blank" rel="noreferrer">
+                                        <h2 className="pb-4 text-2xl font-bold leading-snug text-isabelline-100 hover:text-rosequartz-400">{ "SDI Element Logic (2020-2023) - Software Developer" }</h2>
+                                    </a>
+                                    <p className="pb-4 text-lg text-paledogwood-300">
+                                        <ul class="list-disc pl-8">
+                                            <li>In this position I learned a lot about supply chains and material handling</li>
+                                            <li>I was responsible for designing and developing custom solutions for automating retail and ecom distribution</li>
+                                            <li>I designed and optimized MS SQL server databases</li>
+                                            <li>Maintained and developed C# applications on .NET</li>
+                                            <li>Designed and implemented features in TwinCat for our PLC application</li>
+                                            <li>Commissioned systems on site resolving hardware, software and networking issues</li>
+                                            <li>Configured and installed fault tolerant servers</li>
+                                            <li>Configured Cisco and Netgate appliances</li>
+                                            <li>Worked with clients to configure business to business VPN’s</li>
+                                        </ul>
+                                    </p>
+                                    <div className="flex flex-wrap">
                                         <Badge text={"MS SQL"}/>
                                         <Badge text={"C#"}/>
+                                        <Badge text={".NET Framework"}/>
+                                        <Badge text={".NET Core"}/>
+                                        <Badge text={"Networking/IT"}/>
+                                        <Badge text={"Twincat"}/>
                                         <Badge text={"IEC 61131-3"}/>
                                     </div> 
-                                }
-                            />
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>

@@ -10,7 +10,7 @@ const ProjectTile = ({title, description, href ,src ,alt ,badges}) => (
             <p className="pb-4 text-lg text-paledogwood-300">
                 {description}
             </p>
-            <div className="flex flex-row">
+            <div className="flex flex-wrap">
                 {badges}
             </div>
         </div>
